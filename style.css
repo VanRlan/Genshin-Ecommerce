@@ -130,12 +130,12 @@
     background: center/cover no-repeat;
 }
 
-.home .poster {
+.hero .poster {
     background-image: url("./img/Mondstat.jpeg");
     background-repeat: no-repeat;
 }
 
-.home .poster_sign {
+.hero .poster_sign {
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@
     transform: translate(-50%, -340px);
 }
 
-.home .poster_sub {
+.hero .poster_sub {
     font-size: 40px;
     color: #fff;
     text-align: center;
@@ -156,7 +156,7 @@
     margin: 32px auto 27px;
 }
 
-.home .poster_download {
+.hero .poster_download {
     position: absolute;
     top: 175px;
     left: 50%;
@@ -165,7 +165,7 @@
     justify-content: center;
 }
 
-.home .poster_download li {
+.hero .poster_download li {
     flex-shrink: 0;
     width: 188px;
     height: 62px;
@@ -173,18 +173,18 @@
     opacity: 0.8;
 }
 
-.home .poster_download li a {
+.hero .poster_download li a {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
-.home .poster_download li a img {
+.hero .poster_download li a img {
     height: 100%;
     width: auto;
 }
 
-.home .poster_arrows {
+.hero .poster_arrows {
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -192,22 +192,22 @@
     width: 28px;
 }
 
-.home .poster_arrows-1 {
+.hero .poster_arrows-1 {
     top: 0;
     animation-delay: 0s;
 }
 
-.home .poster_arrows-2 {
+.hero .poster_arrows-2 {
     top: 12px;
     animation-delay: 0.5s;
 }
 
-.home .poster_arrows-3 {
+.hero .poster_arrows-3 {
     top: 24px;
     animation-delay: 1s;
 }
 
-.home .poster_arrow {
+.hero .poster_arrow {
     position: absolute;
     width: 100%;
     height: 24px;
@@ -222,7 +222,7 @@
     animation-iteration-count: infinite;
 }
 
-.home .poster_age {
+.hero .poster_age {
     margin: 40% 5%;
     z-index: 9;
     left: 10px;
@@ -230,7 +230,20 @@
 }
 
 @media screen and (max-width: 1280px) {
-    .home .poster {
+    .hero .poster {
         width: 1280px;
+        background-size: contain;
     }
+
+    .hero .poster_age {
+        margin: 50% 5%;
+    }
+
+    .hero .poster_download {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+
 }
