@@ -10,6 +10,10 @@
     display: block;
 }
 
+ul {
+    list-style: none;
+}
+
 .header {
     position: fixed;
     left: 0;
@@ -133,6 +137,8 @@
 .hero .poster {
     background-image: url("./img/Mondstat.jpeg");
     background-repeat: no-repeat;
+    width: 100%;
+    height: 800px;
 }
 
 .hero .poster_sign {
@@ -223,11 +229,111 @@
 }
 
 .hero .poster_age {
-    margin: 40% 5%;
+    margin: 50% 1%;
     z-index: 9;
     left: 10px;
     border-bottom: 10px;
 }
+
+/* news */
+.news {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 910px;
+    color: #fff;
+}
+
+.news h3 {
+    position: relative;
+    margin: 183px auto 60px;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.news_main {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.news_link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.news_banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news_swiper, .news_content {
+    position: relative;
+    width: 640px;
+    margin: 0;
+    background: rgb(38,18,12,0.62);
+}
+
+.news_tab_list {
+    display: flex;
+    align-items: flex-start;
+    width: 592px;
+    margin: 35px auto 0;
+    border-bottom: 3px solid rgba(255,255,255,0.1);
+}
+
+.news_tab_item--active {
+    color: #ffd49f;
+}
+
+.news_tab_item {
+    position: relative;
+    padding: 0 19px 12px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.news_list {
+    width: 592px;
+    margin: 0 auto;
+}
+
+.news_item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgba(255,255,255,0.8);
+    box-sizing: content-box;
+    font-size: 16px;
+    color: #fff;
+}
+
+.news_more {
+    position: absolute;
+    right: 33px;
+    bottom: 30px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 18px;
+    color: rgba(255,255,255,0.75);
+    cursor: pointer;
+    padding-left: 38px;
+}
+
 
 @media screen and (max-width: 1280px) {
     .hero .poster {
@@ -243,7 +349,4 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    
-
 }
