@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.header-scroll {
+    background-color: rgba(17, 17, 17, 0.85);
+    transform: translateX (0px);
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* NavBar */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    min-width: 1280px;
+    height: 66px;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+}
+
+.header_logo {
+    float: left;
+    margin-left: 8px;
+    width: 317px;
+    height: 105px;
+}
+
+.header_logo img {
+    margin-left: 20px;
+}
+
+.header_navwrap {
+    display: inline-block;
+    position: relative;
+    margin-left: -34px;
+}
+
+.header_navbar {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 10px;
+    margin-left: 40px;
+}
+
+.header_navbar .header_navitem {
+    font-size: 14px;
+    margin: 0 15px !important;
+}
+
+.header_navitem:hover,
+.header_navitem--focus {
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+    color: #fff;
+}
+
+.header_navitem {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    width: auto;
+    height: 66px;
+    line-height: 66px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #ccc;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+.header_login {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 210px;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.header_download {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+}
+
+.header_login {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 210px;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.header_login .login_btn {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 0;
+    outline: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.header_login .login_btn img {
+    margin-left: 18px;
+    width: 27px;
+    height: 27px;
+    opacity: 0.6;
+}
+
+.transition-img {
+    width: 100%;
+    height: 100%;
+    background: center/cover no-repeat;
+}
